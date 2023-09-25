@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Pardot Website 検証用"/>
+        <title>Pardot Website 検証 02</title>
+    </head>
+    <body>
+        Hello World
+	    <!-- Pardotで確認したFH連携用のコードをコピペ -->
+<form action="https://go.jalapenospecial.com/l/1031531/2023-09-25/5dvf" method="post">
+       <!-- まずは必須項目だけ連携 -->
+       <label>メールアドレス</label><input type="text" name="email"><br><br>
+       <!-- submitボタン -->
+       <input type="submit" name="送信">
+</form>
+        <script type='text/javascript'>
+piAId = '1032531';
+piCId = '59446';
+piHostname = 'go.jalapenospecial.com';
 
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+    </body>
+</html>
