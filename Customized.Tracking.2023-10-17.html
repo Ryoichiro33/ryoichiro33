@@ -26,6 +26,14 @@
     pdt("set" , "url" , "https://testest.jalapenospecial.com" );
     pdt("set" , "title" , "タイトル set てすと" );
     pdt("set" , "referrer" , "リファラ set てすと" );
+    pdt(function (tracker) {
+      let status = tracker.getConsentStatus();
+      let title = tracker.get("title");
+      let url = tracker.get("url");
+      let referrer = tracker.get("referrer");
+      let piEmail = tracker.get("piEmail");
+      console.log(status, title, url, referrer, piEmail);
+    });
     pdt('sendPageView');
 
 		</script>
