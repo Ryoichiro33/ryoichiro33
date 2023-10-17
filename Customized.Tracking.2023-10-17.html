@@ -12,6 +12,17 @@
         This is "pdt.js Tracking" Created At Shimademy 
         
 	    	<script>
+			
+	<button type="button" id="show_banner_button" onClick="pdt('showConsentBanner')">
+        Cookie Consent Settings
+      </button>
+      <button type="button" id="cookie_clear_button" onClick="pdt('clearTrackingCookies')">
+        Cookie Clear
+      </button>
+      <button type="button" id="revokeConsent_button" onClick="pdt('revokeConsent')">
+        revokeConsent
+      </button>
+			
 	var piDomain = 'go.jalapenospecial.com'; // format of 'go.example.com'
 	
     (function() {
