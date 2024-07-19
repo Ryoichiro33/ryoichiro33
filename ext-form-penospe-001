@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="PardotTest form001"/>
+        <title>PardotTest Page001 form test 001</title>
+    </head>
+    <body>
+    Domain: jalapenospecial
+    Account Engagement フォームを挿入
+    送信成功で外部ページへ遷移
+    遷移先ページにはダイナミックコンテンツが埋め込まれている
+    ダイナミックコンテンツのコンテンツで差し込み項目が想定どおりに動くか検証
+    ※ ページのトラッキングコードとフォームのトラッキングコードはいずれも統一させること
+	    <!-- Pardotで作ったフォーム(【検証】外部ページリダイレクトフォーム)のHTMLコードをコピペ -->
+<iframe src="https://go.jalapenospecial.com/l/1031531/2024-07-19/21j5c" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0">
+</iframe>
+<script type='text/javascript'>
+piAId = '1032531';
+piCId = '19711';
+piHostname = 'go.jalapenospecial.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+    </body>
+</html>
