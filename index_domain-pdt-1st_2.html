@@ -4,8 +4,8 @@
         <base href="" >
         <meta charset="utf-8"/>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="description" content="Pardot Website 検証用 pardot トラッカードメイン 3rd Party"/>
-        <title>Pardot Website 検証用 pardot トラッカードメイン 3rd Party</title>
+        <meta name="description" content="Pardot Website 検証用 pardot トラッカードメイン 1st Party"/>
+        <title>Pardot Website 検証用 pardot トラッカードメイン 1st Party</title>
     </head>
     <body>
         Hello World <br>
@@ -31,16 +31,25 @@
 	<br>
       《piCId '105600' キャンペーンのトラッキングコードを設置している。》 <br>
 	※ コード内 CId は +1000 された値 <br>
-      《キャンペーン名「pardot.com トラッカードメイン用キャンペーン」》
-<script type="text/javascript">
+      《キャンペーン名「pardot.com トラッカードメイン用キャンペーン」》 <br>
+	！以下に改変済み！ <br>
+	=========== <br>
+	トラッカードメイン：peno.jp-edi.page <br>
+        トラッキングコード生成方法：Tracking Code Generator （1st Party tracking） <br>
+	<br>
+	※ ルートドメインが一致しない 1P コードの設置 <br>
+      《piCId '18711' キャンペーンのトラッキングコードを設置している。》 <br>
+	※ コード内 CId は +1000 された値 <br>
+      《キャンペーン名「[AE] Website Tracking」》 <br>
+<script type='text/javascript'>
 piAId = '1032531';
-piCId = '106600';
-piHostname = 'pi.pardot.com';
+piCId = '19711';
+piHostname = 'peno.jp-edi.page';
 
 (function() {
 	function async_load(){
 		var s = document.createElement('script'); s.type = 'text/javascript';
-		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
 		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
 	}
 	if(window.attachEvent) { window.attachEvent('onload', async_load); }
