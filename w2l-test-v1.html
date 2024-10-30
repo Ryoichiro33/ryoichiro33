@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Pardot Website 検証用"/>
+        <title>Formhandler W2L 連携 検証 001</title>
+    </head>
+    <body>
+        Hello World<br>
+      2024-10-30 作成<br>
+      Case 468794614<br>
+      oid と retURL を入れるパターン<br>
+	    　<!-- Pardotで確認したFH連携用のコードをコピペ -->
+          <form action="https://peno.jp-edi.page/l/1031531/2024-10-30/2bkvd" method="post">
+         <!-- まずは必須項目だけ連携 -->
+          <label>メールアドレス</label><input type="text" name="email"><br><br>
+  	      <label>名</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+          <label>姓</label><input  id="last_name" maxlength="40" name="last_name" size="20" type="text" /><br>
+          <label>会社</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+          <input type=hidden name="oid" value="00D2w00000RIhNu">
+          <input type=hidden name="retURL" value="https://salesforce.com">
+          <input type="submit" name="送信">
+          </form>
+    </body>
+</html>
