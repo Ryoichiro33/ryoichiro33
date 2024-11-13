@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>オルネクス</title>
+</head>
+
+<script type='text/javascript'>
+piAId = '1032531';
+piCId = '19711';
+piHostname = 'peno.jp-edi.page';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+
+<body>
+	
+	<form action="https://go.demo.pardot.com/l/864531/2024-05-29/4968i" method="POST">
+
+		<input type=hidden name="orgid" value="00D9D0000000Pdc">
+		<input type=hidden name="recordType" id="recordType" value="012Hz0000026B8V">
+		<input type=hidden name="retURL" value="https://www.comture.com/">
+		
+		
+		<div>
+			<label>件名</label></br>
+			<textarea name="subject" cols="80" rows="5" maxlength="800" placeholder="400文字以内"></textarea>
+		</div></br>
+		
+		<div>
+			<label>姓</label></br>
+			<input type="text" name="name_sei__c" maxlength="50" placeholder="例：ダイセル">
+		</div></br>
+		<div>
+			<label>名</label></br>
+			<input type="text" name="name_mei__c" maxlength="50" placeholder="例：太郎">
+		</div></br>
+		
+		<div>
+			<label>メールアドレス</label></br>
+			<input type="text" name="email" maxlength="200" placeholder="例：sample@jp.daicel.com">
+		</div></br>
+		<div>
+			<label>電話番号</label></br>
+			<input type="text" name="phone" maxlength="18" placeholder="例：123-456-7890">
+		</div></br>
+		<input type="hidden" name="debug" value=1>
+
+		<input type="submit" name="送信">
+	</form>
+</body>
+</html>
