@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Pardot Website 検証用"/>
+        <title>Pardot Form Handler 検証</title>
+    </head>
+    <body>
+        Hello World
+        ドメインは「peno」
+        トラッキングコードはなし
+        連携先 FH：https://pi.pardot.com/formHandler/read/id/3094?aid=1031531
+        カスタマと同じ Form コードを引用してデータ送信できているかを確認
+	    <!-- Pardotで確認したFH連携用のコードをコピペ -->
+<form method="post" action="https://peno.jp-edi.page/l/1031531/2025-06-10/2ygg5">
+			<div class="formitem">
+				<p class="formtxt need">お名前</p>
+				<input type="text" id="name" name="name" placeholder="例）山田 太郎">
+			</div>
+			<div class="formitem">
+				<p class="formtxt need">電話番号</p>
+				<input type="text" id="tel" name="tel" placeholder="例）03-1234-5678">
+			</div>
+			<div class="formnote">※ご連絡が出来なくなる為、お間違いない様にお願い致します。</div>
+			<div class="formitem">
+				<p class="formtxt need">メールアドレス</p>
+				<input type="text" id="mail" name="mail" placeholder="例）yamada@example.com">
+			</div>
+			<div class="formitem">
+				<p class="formtxt need">お住まいの都道府県</p>
+				<select name="address" id="address">
+				<option value="" selected>選択してください</option>
+				<option value="北海道">北海道</option>
+				<option value="青森県">青森県</option>
+				<option value="岩手県">岩手県</option>
+				<option value="宮城県">宮城県</option>
+				<option value="秋田県">秋田県</option>
+				<option value="山形県">山形県</option>
+				<option value="福島県">福島県</option>
+				<option value="茨城県">茨城県</option>
+				<option value="栃木県">栃木県</option>
+				<option value="群馬県">群馬県</option>
+				<option value="埼玉県">埼玉県</option>
+				<option value="千葉県">千葉県</option>
+				<option value="東京都">東京都</option>
+				<option value="神奈川県">神奈川県</option>
+				<option value="新潟県">新潟県</option>
+				<option value="富山県">富山県</option>
+				<option value="石川県">石川県</option>
+				<option value="福井県">福井県</option>
+				<option value="山梨県">山梨県</option>
+				<option value="長野県">長野県</option>
+				<option value="岐阜県">岐阜県</option>
+				<option value="静岡県">静岡県</option>
+				<option value="愛知県">愛知県</option>
+				<option value="三重県">三重県</option>
+				<option value="滋賀県">滋賀県</option>
+				<option value="京都府">京都府</option>
+				<option value="大阪府">大阪府</option>
+				<option value="兵庫県">兵庫県</option>
+				<option value="奈良県">奈良県</option>
+				<option value="和歌山県">和歌山県</option>
+				<option value="鳥取県">鳥取県</option>
+				<option value="島根県">島根県</option>
+				<option value="岡山県">岡山県</option>
+				<option value="広島県">広島県</option>
+				<option value="山口県">山口県</option>
+				<option value="徳島県">徳島県</option>
+				<option value="香川県">香川県</option>
+				<option value="愛媛県">愛媛県</option>
+				<option value="高知県">高知県</option>
+				<option value="福岡県">福岡県</option>
+				<option value="佐賀県">佐賀県</option>
+				<option value="長崎県">長崎県</option>
+				<option value="熊本県">熊本県</option>
+				<option value="大分県">大分県</option>
+				<option value="宮崎県">宮崎県</option>
+				<option value="鹿児島県">鹿児島県</option>
+				<option value="沖縄県">沖縄県</option>
+				</select>
+			</div>
+			<div class="formitem">
+				<p class="formtxt neednot">クルマテラスを<br class="pc" />知ったきっかけ</p>
+				<div style="width:100%">
+					<div class="sp red_text">※複数選択可</div>
+						<input type="checkbox" id="rizin" value="RIZIN" name="know"><label for="rizin"> RIZIN</label>　
+						<input type="checkbox" id="gogle" value="Google" name="know"><label for="gogle"> Google</label>　
+						<input type="checkbox" id="yahoo" value="Yahoo" name="know"><label for="yahoo"> Yahoo!</label>　<br class="sp" />
+						<input type="checkbox" id="hikaku" value="比較サイト" name="know"><label for="hikaku"> 比較サイト</label>　
+						<input type="checkbox" id="tiktok" value="TikTok" name="know"><label for="tiktok"> TikTok</label>　<br class="pc" />
+						<input type="checkbox" id="instagram" value="Instagram" name="know"><label for="instagram"> Instagram</label>　<br class="sp" />
+						<input type="checkbox" id="youtube" value="YouTube" name="know"><label for="youtube"> YouTube</label>　
+						<input type="checkbox" id="twitter" value="Twitter" name="know"><label for="twitter"> X(旧:Twitter)</label>　
+						<input type="checkbox" id="other" value="その他" name="know"><label for="other"> その他</label>
+					<div class="pc red_text">※複数選択可</div>
+				</div>
+			</div>
+			<div class="formitem">
+				<p class="formtxt neednot">お問合せ内容</p>
+				<textarea name="inquiry" id="inquiry"class="inquiry" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+			</div>
+
+
+			<div class="consentChecker formitem">
+				<p class="formtxt need">個人情報保護方針</p>
+				<div style="width:100%">
+					<span class="popupBox_btn">条項を確認</span>
+					<div class="popupBox">
+						<div class="popupWindow">
+							<div class="popupTitle"><div>個人情報保護方針の同意条項</div><span class="closePopup">×</span></div>
+							<div class="popupBody info-inner">
+
+							<p>クルマテラス株式会社（以下「当社」）は、お客様より預かった個人情報の保護に努めることを社会的責務として認識し、すべての従業員が以下の項目について取り組むべく宣言いたします。</p>
+
+							<p class="info-subtitle">個人情報の取得について</p>
+							<p>当社は、適法かつ公正な手段によってのみ、個人情報を取得致します。</p>
+
+							<p class="info-subtitle">個人情報の利用について</p>
+							<p>当社は、個人情報を取得の際に示した利用目的の範囲内で、業務の遂行上必要な限りにおいて、利用致します。<br />当社は個人情報を第三者との間で共同利用、または個人情報の取り扱いを第三者に委託する場合には、当該第三者につき厳正な調査を行ったうえ、個人情報の機密保持について契約を定める等の適切な措置を講じます。</p>
+
+							<p class="info-subtitle">個人情報の第三者提供について</p>
+							<p>当社は、以下の場合を除いて、お客様の個人情報を第三者に提供することはありません。<br />お客様が事前に第三者に提供する旨を同意されている場合。<br />法律等により、提供が必要とされている場合。<br />個人を識別できない状態で利用する場合。<br />弊社とお客様の権利、財産、安全などを保護、防御する為に必要であると合理的に判断できる場合。</p>
+
+							<p class="info-subtitle">個人情報の管理について</p>
+							<p>当社は、個人情報の正確性を保ち、これを安全に管理いたします。<br />当社は、個人情報の紛失、破壊、改ざん及び漏えいなどを防止するため、不正アクセス、コンピュータウィルス等に対する適正な情報セキュリティ対策を講じます。<br />当社は、個人情報の持ち出し、外部へ送信する行為等による漏えいは行わせません。</p>
+
+							<p class="info-subtitle">個人情報の開示、訂正、利用停止、消去について</p>
+							<p>当社は、お客様が自己の個人情報について、開示、訂正、利用停止、消去等を求める権利を有していることを確認し、これらの要求ある場合には、誠意をもって対応します。<br />なお、当社の個人情報の取り扱いにつきまして、ご意見・ご質問がございましたら、下記の問い合わせ窓口までご連絡下さいますようお願い申し上げます。</p>
+
+							<p class="info-subtitle">Cookie（クッキー）について</p>
+							<p>第三者が運営するデータマネジメント・プラットフォームからクッキーにより収集されたウェブの閲覧履歴及びその分析結果を取得し、これをお客様の個人データと結びつけた上で、広告配信等の目的で利用する場合があります。<br />この場合は、適用法令に従い、個人情報として適切に取り扱います。</p>
+
+							<p class="info-subtitle">個人情報に関するお問い合わせ先</p>
+							<p>クルマテラス株式会社<br />〒105-0001　東京都港区虎ノ門3丁目22−14 エミタス虎ノ門6F<br />Tel.03-6381-5967</p>
+
+							<p class="info-subtitle">その他の事項</p>
+							<p>当社が提供するサービスの一部には、お客様から個人情報のご提供を受けない場合に提供できないものがありますことを予めご承知おきください。<br />当社では、より良い個人情報保護を実現するために、また、個人情報保護法その他関係法令の制改定に伴い、個人情報保護方針を改定することがございます。定期的にご確認頂きますようお願い致します。<br />18歳未満のお客様は、保護者の方の同意を得た上で個人情報をご提供いただきますようお願い致します。<br />本ページの内容は、掲載日以降に適用致します。<br /><br />
+		制定 令和5年5月15日</p><br />
+							<p class="info-title">特定商取引法</p>
+							<p class="info-subtitle">商品代金以外の必要料金</p>
+							<p>遠方のお客様の場合陸送料金<br />陸送料金についてはお客様のお住まいの地域によって異なりますので、当社でお問合せ下さい。</p>
+							<p class="info-subtitle">自動車の配送について</p>
+							<p>● お車は、当社提携会社が配送致します。<br />● 配送期間は、車両の注文販売状況によって異なります。<br />● 日本国内でのみ、車両の販売・発送が可能です。<br />● 天候や交通事情によるやむを得ない理由での車両到着の遅延は、責任を負いかねます。</p>
+							<p class="info-subtitle">お支払い方法</p>
+							<p>[弊社オートローン]<br />弊社提携会社によるローンシステムを利用しております。<br />[備考]<br />お支払い方法は、一括払い・6回・12回・24回・36回・48回・60回・72回・84回、90回、96回、102回、108回、114回、120回の分割払いがご利用いただけます。<br />※ローン金利は、現在年率2.9％をご利用いただいております。<br />[備考]<br />● お支払いの総額は以下です。車両代金（税込）＋諸経費の合計金額<br />● ご契約書に、商品代金総額の記載を行なっております。</p>
+
+							<p class="info-subtitle">車両引渡し時期</p>
+							<p>注文販売ですので、引き渡し時期が流動的です。<br />場合によっては、若干の納期のずれが発生する恐れがあります。<br />お引渡しは、お客様の車検証が出来上がり次第お渡しになります。</p>
+
+							<p class="info-subtitle">返品について</p>
+							<p>●お客様ご都合での返却等が出来ません。<br />※自動車は取得税を必要とするお客様の財産になります。<br />お客様都合でのご返却は基本的に出来かねます。確認を怠らないようお願い致します。<br />詳細は、ご契約書を確認ください。</p>
+							</div>
+						</div>
+					</div><br />
+					<label class="agree"><input type="checkbox" id="agree1" name="agree1" value="同意する"><span>同意する</span></label>
+				</div>
+			</div>
+
+			<div class="consentChecker formitem">
+				<p class="formtxt need">審査代行入力への<br class="pc" />同意①</p>
+				<div style="width:100%">
+					<span class="popupBox_btn">条項を確認</span>
+					<div class="popupBox">
+						<div class="popupWindow">
+							<div class="popupTitle"><div>審査代行入力への同意条項①</div><span class="closePopup">×</span></div>
+							<div class="popupBody info-inner">
+		いいいい
+							</div>
+						</div>
+					</div><br />
+					<label class="agree"><input type="checkbox" id="agree2" name="agree2" value="同意する"><span>同意する</span></label>
+				</div>
+			</div>
+
+			<div class="consentChecker formitem">
+				<p class="formtxt need">審査代行入力への<br class="pc" />同意②</p>
+				<div style="width:100%">
+					<span class="popupBox_btn">条項を確認</span>
+					<div class="popupBox">
+						<div class="popupWindow">
+							<div class="popupTitle"><div>審査代行入力への同意条項②</div><span class="closePopup">×</span></div>
+							<div class="popupBody info-inner">
+									ああああ</div>
+						</div>
+					</div><br/>
+					<label class="agree"><input type="checkbox" id="agree3" name="agree3" value="同意する"><span>同意する</span></label>
+				</div>
+			</div>
+			<input type="hidden" id="gclid_field" name="gclid_field" value="">
+			<input type="hidden" id="param" name="param" value="">
+						<div class="buttonbox"><button type="button" name="submitbtn" class="submitbtn" onClick="nsfatr('sub');"></button></div>
+		</form>
+    </body>
+</html>
