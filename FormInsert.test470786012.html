@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Form 埋め込み 動作検証用"/>
+        <title>Form 埋め込み 動作検証用</title>
+    </head>
+    <body>
+        Hello World <br>
+
+      <br>
+      以下 URL のフォームを iframe で埋め込んでいる。<br>
+      https://pi.pardot.com/form/read/id/597?aid=1031531<br>
+      ※ ランディングページ（https://pi.pardot.com/landingPage/read/id/118?aid=1031531）にも埋め込まれているようなフォーム。<br>
+      <br>
+      フォーム閲覧時、ならびにフォーム登録時に Account Engagement 側でどの統計情報が回るかを確認<br>
+      <br>
+      
+        トラッカードメイン：go.jalapenospecial.com <br>
+        トラッキングコード生成方法：Tracing Code Generator （1st Party tracking） <br>
+	-- --- --<br>
+      《piCId '18711' キャンペーンのトラッキングコードを設置している。》 <br>
+	※ コード内 CId は +1000 された値 <br>
+      《キャンペーン名「[AE] Website Tracking」》 <br>
+	-- --- --<br>
+	トラッカードメイン：peno.jp-edi.page
+      《piCId '18711' キャンペーンのトラッキングコードを設置している。》 <br>
+	※ コード内 CId は +1000 された値 <br>
+      《キャンペーン名「[AE] Website Tracking」》 <br>
+	    
+<script type='text/javascript'>
+piAId = '1032531';
+piCId = '19711';
+piHostname = 'peno.jp-edi.page';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+    </body>
+</html>
