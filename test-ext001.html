@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="" >
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="Pardot Website 検証用"/>
+        <title>Pardot Form Handler 検証</title>
+    </head>
+    <body>
+        完了アクションの検証用<br>
+        以下フォームハンドラーを埋め込み済み<br>
+        https://pi.pardot.com/formHandler/read/id/3303?aid=1031531<br>
+        完了アクションで外部アクションを起動、親オブジェクトレコードを作成する実装<br>
+        本ページ内にトラッキングコードが埋め込み済み<br>
+	    <!-- Pardotで確認したFH連携用のコードをコピペ -->
+<form action="https://peno.jp-edi.page/l/1031531/2025-08-28/35fvb" method="post">
+       <!-- まずは必須項目だけ連携 -->
+       <label>メールアドレス</label><input type="text" name="email"><br><br>
+	　　　<label>パラメータ</label><input type="text" name="form_id"><br><br>
+       <!-- submitボタン -->
+       <input type="submit" name="送信">
+</form>
+       <script type='text/javascript'>
+piAId = '1032531';
+piCId = '19711';
+piHostname = 'peno.jp-edi.page';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+    </body>
+</html>
